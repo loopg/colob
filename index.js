@@ -113,7 +113,8 @@ app.use(expressWinston.logger({
 }));
 
 const corsOptions = {
-  origin: process.env.LOGIN_URL || 'http://localhost:5173',
+  // origin: process.env.LOGIN_URL || 'http://localhost:5173',
+  origin: 'http://localhost:5173',
   methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allowed methods
   // allowedHeaders: ['Content-Type', 'Authorization'], h
 };
